@@ -9,7 +9,7 @@ from __future__ import division
 import random
 import numpy as np
 import matplotlib.pyplot as plt
-import time
+#import time
 #第一步，产生随机点，并用字典保存下来
 def to_polar(x,y):
     '''
@@ -224,7 +224,7 @@ if __name__ == '__main__' :
         number=input(u"要产生多少随机点:")
         l=float(input(u"随机范围最小值:"))
         r=float(input(u"随机范围最大值:"))
-        start=time.time()
+        #start=time.time()
         my_point=generate_point(number,l,r)
     elif sign==2:
         my_point=input_point()
@@ -233,4 +233,4 @@ if __name__ == '__main__' :
     show_point(my_point)    
     final_x,final_y=aim_point(my_point)
     show_graph(final_x,final_y)
-    print "所用时间{0}".format(time.time()-start)
+    #print "所用时间{0}".format(time.time()-start)
